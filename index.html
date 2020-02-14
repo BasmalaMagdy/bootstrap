@@ -26,17 +26,21 @@
       id="main-nav"
     >
       <div class="containar">
-        <a href="index.html" class="navbar-brand">loopLAB</a>
+        <a href="#" class="navbar-brand">loopLAB</a>
         <button
+          type="button"
           class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarcollapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarcollapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item ">
               <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
@@ -344,13 +348,18 @@
     </footer>
 
     <!--CONTACT MODAL-->
-    <div class="modal fade text-dark" id="contactModal">
-      <div class="madal-dialog">
-        <div class="modal-content">
+    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+      <div class="madal-dialog" role="document">
+        <div class="modal-content text-dark">
           <div class="modal-header">
             <h5 class="modal-title">Contact Us</h5>
-            <button class="close" data-dismiss="modal">
-              <span>&times;</span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true"> &times; </span>
             </button>
           </div>
           <div class="modal-body">

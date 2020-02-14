@@ -7,6 +7,9 @@ body {
   border-bottom: #008ed6 3px solid;
   opacity: 0.8;
 }
+.collapse navbar-collapse {
+  float: right;
+}
 #home-section {
   background: url(../img/home.jpg);
   background-repeat: no-repeat;
